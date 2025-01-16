@@ -250,6 +250,7 @@ class SPaRCNet(nn.Module):
     def forward(self, x):
         emb = self.encoder(x).squeeze(-1)
         out = self.classifier(emb)
+        # print('John')
         return out
 
 

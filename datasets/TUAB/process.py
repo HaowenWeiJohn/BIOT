@@ -141,7 +141,7 @@ if __name__ == "__main__":
     TUAB dataset is downloaded from https://isip.piconepress.com/projects/tuh_eeg/html/downloads.shtml
     """
     # root to abnormal dataset
-    root = "/srv/local/data/TUH/tuh_eeg_abnormal/v3.0.0/edf/"
+    root = "C:/Dataset/raw/tuh_eeg_abnormal/v3.0.1/edf/"
     channel_std = "01_tcp_ar"
 
     # train, val abnormal subjects

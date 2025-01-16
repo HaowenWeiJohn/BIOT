@@ -12,7 +12,7 @@ from pytorch_lightning.loggers import TensorBoardLogger
 from pytorch_lightning.strategies import DDPStrategy
 from pytorch_lightning.callbacks import ModelCheckpoint
 from pytorch_lightning.callbacks.early_stopping import EarlyStopping
-# from pyhealth.metrics import binary_metrics_fn
+from pyhealth.metrics import binary_metrics_fn
 
 from model import (
     SPaRCNet,
@@ -58,19 +58,12 @@ class LitModel_finetune(pl.LightningModule):
             sum(gt) * (len(gt) - sum(gt)) != 0
         ):  # to prevent all 0 or all 1 and raise the AUROC error
             self.threshold = np.sort(result)[-int(np.sum(gt))]
-
-            # result = binary_metrics_fn(
-            #     gt,
-            #     result,
-            #     metrics=["pr_auc", "roc_auc", "accuracy", "balanced_accuracy"],
-            #     threshold=self.threshold,
-            # )
-            result = {
-                "accuracy": 0.0,
-                "balanced_accuracy": 0.0,
-                "pr_auc": 0.0,
-                "roc_auc": 0.0,
-            }
+            result = binary_metrics_fn(
+                gt,
+                result,
+                metrics=["pr_auc", "roc_auc", "accuracy", "balanced_accuracy"],
+                threshold=self.threshold,
+            )
         else:
             result = {
                 "accuracy": 0.0,
@@ -101,18 +94,12 @@ class LitModel_finetune(pl.LightningModule):
         if (
             sum(gt) * (len(gt) - sum(gt)) != 0
         ):  # to prevent all 0 or all 1 and raise the AUROC error
-            # result = binary_metrics_fn(
-            #     gt,
-            #     result,
-            #     metrics=["pr_auc", "roc_auc", "accuracy", "balanced_accuracy"],
-            #     threshold=self.threshold,
-            # )
-            result = {
-                "accuracy": 0.0,
-                "balanced_accuracy": 0.0,
-                "pr_auc": 0.0,
-                "roc_auc": 0.0,
-            }
+            result = binary_metrics_fn(
+                gt,
+                result,
+                metrics=["pr_auc", "roc_auc", "accuracy", "balanced_accuracy"],
+                threshold=self.threshold,
+            )
         else:
             result = {
                 "accuracy": 0.0,
@@ -145,7 +132,7 @@ def prepare_TUAB_dataloader(args):
     torch.cuda.manual_seed_all(seed)
     np.random.seed(seed)
 
-    root = "C:/Dataset/raw/tuh_eeg_abnormal/v3.0.1/edf/processed"
+    root = "/srv/local/data/TUH/tuh3/tuh_eeg_abnormal/v3.0.0/edf/processed"
 
     train_files = os.listdir(os.path.join(root, "train"))
     np.random.shuffle(train_files)
