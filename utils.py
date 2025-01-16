@@ -4,9 +4,6 @@ import numpy as np
 import torch.nn.functional as F
 import os
 from scipy.signal import resample
-from scipy.signal import butter, iirnotch, filtfilt
-from scipy.interpolate import interp1d
-from scipy.signal import butter, lfilter
 
 
 class TUABLoader(torch.utils.data.Dataset):

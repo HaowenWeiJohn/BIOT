@@ -207,7 +207,7 @@ if __name__ == '__main__':
         drop_last=True,
         num_workers=num_workers,
         pin_memory=True,
-        persistent_workers=False,
+        persistent_workers=True,
     )
 
     val_loader = DataLoader(
@@ -217,7 +217,7 @@ if __name__ == '__main__':
         drop_last=True,
         num_workers=num_workers,
         pin_memory=True,
-        persistent_workers=False,
+        persistent_workers=True,
     )
 
     test_loader = DataLoader(
@@ -227,7 +227,7 @@ if __name__ == '__main__':
         drop_last=True,
         num_workers=num_workers,
         pin_memory=True,
-        persistent_workers=False,
+        persistent_workers=True,
     )
 
     # the total number of samples:
