@@ -130,13 +130,8 @@ def split_and_dump(params):
                 dump_path = os.path.join(
                     dump_folder, file.split(".")[0] + "_" + str(i) + ".pkl"
                 )
-                X = channeled_data[:, i * 2000 : (i + 1) * 2000]
-                X = X / (
-                        np.quantile(np.abs(X), q=0.95, method="linear", axis=-1, keepdims=True)
-                        + 1e-8
-                )
                 pickle.dump(
-                    {"X": X, "y": label},
+                    {"X": channeled_data[:, i * 2000 : (i + 1) * 2000], "y": label},
                     open(dump_path, "wb"),
                 )
 
@@ -211,6 +206,6 @@ if __name__ == "__main__":
         parameters.append([test_normal, test_sub, test_dump_folder, 0])
 
     # split and dump in parallel
-    with Pool(processes=32) as pool:
+    with Pool(processes=24) as pool:
         # Use the pool.map function to apply the square function to each element in the numbers list
         result = pool.map(split_and_dump, parameters)
