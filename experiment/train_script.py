@@ -1,30 +1,13 @@
-import torch.nn as nn
-import os
-
-import numpy as np
-import torch
-import torch.nn as nn
-
-from sklearn.metrics import (
-    f1_score,
-    recall_score,
-    confusion_matrix,
-    balanced_accuracy_score,
-    roc_auc_score
-)
-
-from torch import optim
-from torch.utils.data import DataLoader
-from tqdm import tqdm
-from sklearn.preprocessing import label_binarize
 import time
 
+import torch.nn as nn
+
 from experiment.train_utils import *
-from model import SPaRCNet
+from model import SPaRCNet, CNNTransformer, FFCL, ContraWR, STTransformer, BIOTClassifier
 
 if __name__ == '__main__':
 
-    model_name = "SPaRCNet"
+    model_name = "BIOT"
     dataset_name = "IIIC"
 
     print(torch.cuda.is_available())
@@ -43,14 +26,25 @@ if __name__ == '__main__':
 
     # get dataset
     if dataset_name == "TUAB":
+        dataset_root = "C:/Dataset/raw/tuh_eeg_abnormal/v3.0.1/edf/processed/"
         class_weight = None
         n_classes = 2
-        dataset_root = "C:/Dataset/raw/tuh_eeg_abnormal/v3.0.1/edf/processed/"
+
+        num_workers = 32
+        in_channels = 16
+        sampling_rate = 200
+        sample_length = 10
 
     elif dataset_name == "IIIC":
+        dataset_root = "C:/Dataset/raw/IIIC/processed/"
         class_weight = [0.1181606 , 0.10036655, 0.18678813, 0.20368562, 0.19775413, 0.19324496]
         n_classes = 6
-        dataset_root = "C:/Dataset/raw/IIIC/processed/"
+
+        num_workers = 4
+        in_channels = 16
+        sampling_rate = 200
+        sample_length = 10
+
     else:
         # stop the program
         exit()
@@ -70,6 +64,54 @@ if __name__ == '__main__':
             conv_bias=True,
             batch_norm=True,
         )
+
+    elif model_name == "CNNTransformer":
+        model = CNNTransformer(
+        in_channels=in_channels,
+        n_classes=n_classes,
+        fft=200,
+        steps=20,
+        dropout=0.2,
+        nhead=4,
+        emb_size=256,
+        )
+
+    elif model_name == "FFCL":
+
+        model = FFCL(
+            in_channels=in_channels,
+            n_classes=n_classes,
+            fft=200,
+            steps=20,
+            sample_length=int(sampling_rate * sample_length),
+            shrink_steps=20,
+        )
+
+    elif model_name == "ContraWR":
+
+        model = ContraWR(in_channels=in_channels,
+                         n_classes=n_classes,
+                         fft=200,
+                         steps=20)
+
+    elif model_name == "STTransformer":
+
+        model = STTransformer(
+            emb_size=256,
+            depth=4,
+            n_classes=n_classes
+        )
+
+    elif model_name == "BIOT":
+        model = BIOTClassifier(
+            emb_size=256,
+            heads=8,
+            depth=4,
+            n_classes=n_classes,
+            n_fft=200,
+            hop_length=100
+        )
+
     else:
         # stop the program
         exit()
@@ -175,6 +217,25 @@ if __name__ == '__main__':
     scheduler = optim.lr_scheduler.StepLR(optimizer, step_size=1)
 
     best_val_loss = float('inf')
+
+
+    # do a evaluation on the val before any training
+
+    val_loss, val_auroc, val_sensitivity, val_specificity, val_f1, val_balanced_accuracy = evaluate(
+        model, val_loader, criterion, device, n_classes
+    )
+
+    print(f"Before Training:")
+    print(
+        f"Val Loss: {val_loss:.4f} | Val AUC: {val_auroc:.4f} | Val Sensitivity: {val_sensitivity:.4f} | Val Specificity: {val_specificity:.4f} | Val F1: {val_f1:.4f} | Val Balanced Accuracy: {val_balanced_accuracy:.4f}"
+    )
+
+    log_file.write(f"Before Training:\n")
+    log_file.write(
+        f"Val Loss: {val_loss:.4f} | Val AUC: {val_auroc:.4f} | Val Sensitivity: {val_sensitivity:.4f} | Val Specificity: {val_specificity:.4f} | Val F1: {val_f1:.4f} | Val Balanced Accuracy: {val_balanced_accuracy:.4f}\n"
+    )
+    log_file.flush()
+
 
     for epoch in range(num_epochs):
 
