@@ -56,6 +56,18 @@ x_train, y_train = x[train_mask], y[train_mask]
 x_val, y_val = x[val_mask], y[val_mask]
 x_test, y_test = x[test_mask], y[test_mask]
 
+
+# # Step 1: Count occurrences of each class
+# unique_classes, class_counts = np.unique(y_train, return_counts=True)
+#
+# # Step 2: Calculate class weights (inverse of class frequencies)
+# class_weights = 1.0 / class_counts
+#
+# # Step 3: Normalize the weights (optional, but recommended for stability)
+# class_weights = class_weights / class_weights.sum()
+
+
+
 # Print the shapes
 print('Train set:', x_train.shape, y_train.shape)
 print('Validation set:', x_val.shape, y_val.shape)

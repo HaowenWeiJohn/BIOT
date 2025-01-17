@@ -42,18 +42,19 @@ class TUABLoader(torch.utils.data.Dataset):
         return X, Y
 
 class IIICLoader(torch.utils.data.Dataset):
-    def __init__(self, x, y):
+    def __init__(self, x_path, y_path, sampling_rate=200):
         # x is numpy array of shape (n_samples, n_channels, n_timesteps)
         # y is 1-D numpy array of shape (n_samples,)
-        self.x = x
-        self.y = y
+
+        self.x = np.load(x_path)
+        self.y = np.load(y_path)
 
     def __len__(self):
         return len(self.y)
 
     def __getitem__(self, index):
         x = torch.FloatTensor(self.x[index])
-        y = torch.LongTensor([self.y[index]])
+        y = self.y[index]
         return x, y
 
 
