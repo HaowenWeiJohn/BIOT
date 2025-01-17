@@ -114,7 +114,7 @@ def train_one_epoch(model, loader, criterion, optimizer, device, n_classes):
     progress_bar = tqdm(loader, desc="Training", leave=False)
 
     for inputs, targets in progress_bar:
-        inputs, targets = inputs.to(device), targets.to(device, dtype=torch.long)
+        inputs, targets = inputs.to(device), targets.to(device)
 
         # Forward pass
         outputs = model(inputs)

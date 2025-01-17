@@ -17,16 +17,13 @@ keys = np.load(os.path.join(root, 'all_train_key.npy'))
 percentiles = np.quantile(np.abs(x), q=0.95, axis=-1, method="linear", keepdims=True)
 x = x / (percentiles + 1e-6)
 
-
 # y was in one hot encoding, convert it to integer
 y = np.argmax(y, axis=1)
-
 
 # print their shape:
 print('x shape:', x.shape)
 print('y shape:', y.shape)
 print('keys shape:', keys.shape)
-
 
 # Extract unique patient IDs
 patient_ids = np.array([key.split('_')[0] for key in keys])
