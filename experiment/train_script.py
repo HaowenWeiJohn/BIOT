@@ -7,7 +7,7 @@ from model import SPaRCNet, CNNTransformer, FFCL, ContraWR, STTransformer, BIOTC
 
 if __name__ == '__main__':
 
-    model_name = "BIOT"
+    model_name = "ContraWR"
     dataset_name = "IIIC"
 
     print(torch.cuda.is_available())
@@ -52,7 +52,7 @@ if __name__ == '__main__':
 
     model = None
     if model_name == "SPaRCNet":
-
+        print("SPaRCNet")
         model = SPaRCNet(
             in_channels=in_channels,
             sample_length=int(sampling_rate * sample_length),
@@ -66,6 +66,7 @@ if __name__ == '__main__':
         )
 
     elif model_name == "CNNTransformer":
+        print("CNNTransformer")
         model = CNNTransformer(
         in_channels=in_channels,
         n_classes=n_classes,
@@ -77,7 +78,7 @@ if __name__ == '__main__':
         )
 
     elif model_name == "FFCL":
-
+        print("FFCL")
         model = FFCL(
             in_channels=in_channels,
             n_classes=n_classes,
@@ -88,14 +89,14 @@ if __name__ == '__main__':
         )
 
     elif model_name == "ContraWR":
-
+        print("ContraWR")
         model = ContraWR(in_channels=in_channels,
                          n_classes=n_classes,
                          fft=200,
                          steps=20)
 
     elif model_name == "STTransformer":
-
+        print("STTransformer")
         model = STTransformer(
             emb_size=256,
             depth=4,
@@ -103,6 +104,7 @@ if __name__ == '__main__':
         )
 
     elif model_name == "BIOT":
+        print("BIOT")
         model = BIOTClassifier(
             emb_size=256,
             heads=8,
