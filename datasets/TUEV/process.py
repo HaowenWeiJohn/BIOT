@@ -159,7 +159,7 @@ def save_pickle(object, filename):
 TUEV dataset is downloaded from https://isip.piconepress.com/projects/tuh_eeg/html/downloads.shtml
 """
 
-root = "/srv/local/data/TUH/tuh_eeg_events/v2.0.0/edf"
+root = "C:/Dataset/raw/tuh_eeg_events/v2.0.1/edf"
 train_out_dir = os.path.join(root, "processed_train")
 eval_out_dir = os.path.join(root, "processed_eval")
 if not os.path.exists(train_out_dir):
@@ -178,13 +178,13 @@ load_up_objects(
     BaseDirTrain, TrainFeatures, TrainLabels, TrainOffendingChannel, train_out_dir
 )
 
-BaseDirEval = os.path.join(root, "eval")
-fs = 250
-EvalFeatures = np.empty(
-    (0, 16, fs)
-)  # 0 for lack of intialization, 22 for channels, fs for num of points
-EvalLabels = np.empty([0, 1])
-EvalOffendingChannel = np.empty([0, 1])
-load_up_objects(
-    BaseDirEval, EvalFeatures, EvalLabels, EvalOffendingChannel, eval_out_dir
-)
+# BaseDirEval = os.path.join(root, "eval")
+# fs = 250
+# EvalFeatures = np.empty(
+#     (0, 16, fs)
+# )  # 0 for lack of intialization, 22 for channels, fs for num of points
+# EvalLabels = np.empty([0, 1])
+# EvalOffendingChannel = np.empty([0, 1])
+# load_up_objects(
+#     BaseDirEval, EvalFeatures, EvalLabels, EvalOffendingChannel, eval_out_dir
+# )

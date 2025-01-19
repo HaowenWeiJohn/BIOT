@@ -4,19 +4,31 @@ import torch.nn as nn
 
 from experiment.train_utils import *
 from model import SPaRCNet, CNNTransformer, FFCL, ContraWR, STTransformer, BIOTClassifier
+import argparse
 
 
 if __name__ == '__main__':
 
-    # model_name = "SPaRCNet"
-    # model_name = "CNNTransformer"
+    parser = argparse.ArgumentParser(description="Train model on a given dataset.")
+    parser.add_argument("--model_name", required=True, help="Name of the model to train.")
+    parser.add_argument("--dataset_name", required=True, help="Name of the dataset to use.")
+
+    args = parser.parse_args()
+
+    # Access the arguments
+    model_name = args.model_name
+    dataset_name = args.dataset_name
+
+
+    # # model_name = "SPaRCNet"
+    # # model_name = "CNNTransformer"
     # model_name = "FFCL"
-    # model_name = "ContraWR"
-    # model_name = "STTransformer"
-    model_name = "BIOT"
-
-
-    dataset_name = "TUEV"
+    # # model_name = "ContraWR"
+    # # model_name = "STTransformer"
+    # # model_name = "BIOT"
+    #
+    #
+    # dataset_name = "TUEV"
 
     print(torch.cuda.is_available())
 
@@ -55,7 +67,7 @@ if __name__ == '__main__':
 
     elif dataset_name == "TUEV":
         dataset_root = "C:/Dataset/raw/tuh_eeg_events/v2.0.1/edf/processed/"
-        class_weight = [0.5711400335475981, 0.02574656125416239, 0.06524567482806858, 0.3027807097490057, 0.02898413631785354, 0.006102884303311568]
+        # class_weight =
         n_classes = 6
 
         num_workers = 0
@@ -123,8 +135,7 @@ if __name__ == '__main__':
         model = STTransformer(
             emb_size=256,
             depth=4,
-            n_classes=n_classes,
-            channel_length=int(sampling_rate * sample_length)
+            n_classes=n_classes
         )
 
     elif model_name == "BIOT":

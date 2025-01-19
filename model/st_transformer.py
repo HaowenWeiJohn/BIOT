@@ -189,14 +189,14 @@ class STTransformer(nn.Module):
         emb_size=256,
         depth=3,
         n_classes=4,
-        channel_legnth=2000,
+        channel_length=2000,
         n_channels=16,
         **kwargs
     ):
         super().__init__()
         self.channel_attension = ResidualAdd(
             nn.Sequential(
-                nn.LayerNorm(channel_legnth),
+                nn.LayerNorm(channel_length),
                 ChannelAttention(n_channels=n_channels),
                 nn.Dropout(0.5),
             )

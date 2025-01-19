@@ -1,22 +1,32 @@
+import argparse
 import time
-
 import torch.nn as nn
-
 from experiment.train_utils import *
 from model import SPaRCNet, CNNTransformer, FFCL, ContraWR, STTransformer, BIOTClassifier
 
 
 if __name__ == '__main__':
 
-    # model_name = "SPaRCNet"
-    # model_name = "CNNTransformer"
-    # model_name = "FFCL"
-    # model_name = "ContraWR"
-    # model_name = "STTransformer"
-    model_name = "BIOT"
+    # # model_name = "SPaRCNet"
+    # # model_name = "CNNTransformer"
+    # # model_name = "FFCL"
+    # # model_name = "ContraWR"
+    # # model_name = "STTransformer"
+    # model_name = "BIOT"
+    #
+    #
+    # dataset_name = "TUEV"
 
+    parser = argparse.ArgumentParser(description="Train model on a given dataset.")
+    parser.add_argument("--model_name", required=True, help="Name of the model to train.")
+    parser.add_argument("--dataset_name", required=True, help="Name of the dataset to use.")
 
-    dataset_name = "TUEV"
+    args = parser.parse_args()
+
+    # Access the arguments
+    model_name = args.model_name
+    dataset_name = args.dataset_name
+
 
     print(torch.cuda.is_available())
 
@@ -38,7 +48,7 @@ if __name__ == '__main__':
         class_weight = None
         n_classes = 2
 
-        num_workers = 32
+        num_workers = 24
         in_channels = 16
         sampling_rate = 200
         sample_length = 10

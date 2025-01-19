@@ -315,7 +315,7 @@ def supervised(args):
             emb_size=256,
             depth=4,
             n_classes=args.n_classes,
-            channel_legnth=int(
+            channel_length=int(
                 args.sampling_rate * args.sample_length
             ),  # (sampling_rate * duration)
             n_channels=args.in_channels,
