@@ -1,0 +1,77 @@
+Model: ContraWR
+Dataset: IIIC
+Time: 2025-01-17-16-01-01
+Sampling Rate: 200
+Sample Length: 10
+Batch Size: 512
+Number of Workers: 4
+Number of Classes: 6
+Number of Epochs: 20
+Learning Rate: 0.001
+Weight Decay: 1e-05
+Class Weight: [0.1181606, 0.10036655, 0.18678813, 0.20368562, 0.19775413, 0.19324496]
+Epoch 1/20
+Train Loss: 1.3985 | Train AUC: 0.7743 | Train Sensitivity: 0.4468 | Train Specificity: 0.8840 | Train F1: 0.4173 | Train Balanced Accuracy: 0.4468
+Val Loss: 2.1604 | Val AUC: 0.7617 | Val Sensitivity: 0.3113 | Val Specificity: 0.8573 | Val F1: 0.2304 | Val Balanced Accuracy: 0.3113
+Model saved!
+Epoch 2/20
+Train Loss: 1.0769 | Train AUC: 0.8620 | Train Sensitivity: 0.5894 | Train Specificity: 0.9103 | Train F1: 0.5539 | Train Balanced Accuracy: 0.5894
+Val Loss: 2.1332 | Val AUC: 0.7631 | Val Sensitivity: 0.3566 | Val Specificity: 0.8647 | Val F1: 0.2728 | Val Balanced Accuracy: 0.3566
+Model saved!
+Epoch 3/20
+Train Loss: 1.0476 | Train AUC: 0.8691 | Train Sensitivity: 0.6025 | Train Specificity: 0.9129 | Train F1: 0.5677 | Train Balanced Accuracy: 0.6025
+Val Loss: 1.9806 | Val AUC: 0.7736 | Val Sensitivity: 0.4028 | Val Specificity: 0.8728 | Val F1: 0.3144 | Val Balanced Accuracy: 0.4028
+Model saved!
+Epoch 4/20
+Train Loss: 1.0456 | Train AUC: 0.8699 | Train Sensitivity: 0.6044 | Train Specificity: 0.9133 | Train F1: 0.5704 | Train Balanced Accuracy: 0.6044
+Val Loss: 2.0063 | Val AUC: 0.7722 | Val Sensitivity: 0.3996 | Val Specificity: 0.8720 | Val F1: 0.3090 | Val Balanced Accuracy: 0.3996
+Epoch 5/20
+Train Loss: 1.0431 | Train AUC: 0.8704 | Train Sensitivity: 0.6063 | Train Specificity: 0.9137 | Train F1: 0.5725 | Train Balanced Accuracy: 0.6063
+Val Loss: 1.9918 | Val AUC: 0.7727 | Val Sensitivity: 0.3994 | Val Specificity: 0.8719 | Val F1: 0.3082 | Val Balanced Accuracy: 0.3994
+Epoch 6/20
+Train Loss: 1.0428 | Train AUC: 0.8705 | Train Sensitivity: 0.6046 | Train Specificity: 0.9134 | Train F1: 0.5706 | Train Balanced Accuracy: 0.6046
+Val Loss: 2.0002 | Val AUC: 0.7725 | Val Sensitivity: 0.3989 | Val Specificity: 0.8718 | Val F1: 0.3083 | Val Balanced Accuracy: 0.3989
+Epoch 7/20
+Train Loss: 1.0429 | Train AUC: 0.8706 | Train Sensitivity: 0.6043 | Train Specificity: 0.9134 | Train F1: 0.5709 | Train Balanced Accuracy: 0.6043
+Val Loss: 2.0070 | Val AUC: 0.7722 | Val Sensitivity: 0.3986 | Val Specificity: 0.8719 | Val F1: 0.3095 | Val Balanced Accuracy: 0.3986
+Epoch 8/20
+Train Loss: 1.0434 | Train AUC: 0.8700 | Train Sensitivity: 0.6055 | Train Specificity: 0.9136 | Train F1: 0.5718 | Train Balanced Accuracy: 0.6055
+Val Loss: 1.9940 | Val AUC: 0.7726 | Val Sensitivity: 0.4005 | Val Specificity: 0.8721 | Val F1: 0.3102 | Val Balanced Accuracy: 0.4005
+Epoch 9/20
+Train Loss: 1.0445 | Train AUC: 0.8700 | Train Sensitivity: 0.6036 | Train Specificity: 0.9132 | Train F1: 0.5699 | Train Balanced Accuracy: 0.6036
+Val Loss: 1.9909 | Val AUC: 0.7731 | Val Sensitivity: 0.4017 | Val Specificity: 0.8724 | Val F1: 0.3121 | Val Balanced Accuracy: 0.4017
+Epoch 10/20
+Train Loss: 1.0442 | Train AUC: 0.8702 | Train Sensitivity: 0.6036 | Train Specificity: 0.9132 | Train F1: 0.5702 | Train Balanced Accuracy: 0.6036
+Val Loss: 2.0143 | Val AUC: 0.7716 | Val Sensitivity: 0.3964 | Val Specificity: 0.8713 | Val F1: 0.3052 | Val Balanced Accuracy: 0.3964
+Epoch 11/20
+Train Loss: 1.0417 | Train AUC: 0.8706 | Train Sensitivity: 0.6041 | Train Specificity: 0.9132 | Train F1: 0.5698 | Train Balanced Accuracy: 0.6041
+Val Loss: 2.0056 | Val AUC: 0.7722 | Val Sensitivity: 0.3983 | Val Specificity: 0.8719 | Val F1: 0.3092 | Val Balanced Accuracy: 0.3983
+Epoch 12/20
+Train Loss: 1.0436 | Train AUC: 0.8701 | Train Sensitivity: 0.6028 | Train Specificity: 0.9129 | Train F1: 0.5685 | Train Balanced Accuracy: 0.6028
+Val Loss: 2.0095 | Val AUC: 0.7719 | Val Sensitivity: 0.3975 | Val Specificity: 0.8718 | Val F1: 0.3086 | Val Balanced Accuracy: 0.3975
+Epoch 13/20
+Train Loss: 1.0445 | Train AUC: 0.8700 | Train Sensitivity: 0.6045 | Train Specificity: 0.9133 | Train F1: 0.5704 | Train Balanced Accuracy: 0.6045
+Val Loss: 2.0236 | Val AUC: 0.7716 | Val Sensitivity: 0.3975 | Val Specificity: 0.8716 | Val F1: 0.3063 | Val Balanced Accuracy: 0.3975
+Epoch 14/20
+Train Loss: 1.0433 | Train AUC: 0.8701 | Train Sensitivity: 0.6054 | Train Specificity: 0.9135 | Train F1: 0.5716 | Train Balanced Accuracy: 0.6054
+Val Loss: 2.0148 | Val AUC: 0.7716 | Val Sensitivity: 0.3976 | Val Specificity: 0.8715 | Val F1: 0.3059 | Val Balanced Accuracy: 0.3976
+Epoch 15/20
+Train Loss: 1.0436 | Train AUC: 0.8700 | Train Sensitivity: 0.6061 | Train Specificity: 0.9136 | Train F1: 0.5722 | Train Balanced Accuracy: 0.6061
+Val Loss: 1.9985 | Val AUC: 0.7724 | Val Sensitivity: 0.3971 | Val Specificity: 0.8719 | Val F1: 0.3092 | Val Balanced Accuracy: 0.3971
+Epoch 16/20
+Train Loss: 1.0424 | Train AUC: 0.8706 | Train Sensitivity: 0.6036 | Train Specificity: 0.9133 | Train F1: 0.5698 | Train Balanced Accuracy: 0.6036
+Val Loss: 1.9978 | Val AUC: 0.7725 | Val Sensitivity: 0.3977 | Val Specificity: 0.8720 | Val F1: 0.3098 | Val Balanced Accuracy: 0.3977
+Epoch 17/20
+Train Loss: 1.0421 | Train AUC: 0.8707 | Train Sensitivity: 0.6044 | Train Specificity: 0.9134 | Train F1: 0.5709 | Train Balanced Accuracy: 0.6044
+Val Loss: 2.0141 | Val AUC: 0.7718 | Val Sensitivity: 0.3972 | Val Specificity: 0.8716 | Val F1: 0.3067 | Val Balanced Accuracy: 0.3972
+Epoch 18/20
+Train Loss: 1.0427 | Train AUC: 0.8703 | Train Sensitivity: 0.6055 | Train Specificity: 0.9135 | Train F1: 0.5715 | Train Balanced Accuracy: 0.6055
+Val Loss: 2.0027 | Val AUC: 0.7725 | Val Sensitivity: 0.3993 | Val Specificity: 0.8722 | Val F1: 0.3107 | Val Balanced Accuracy: 0.3993
+Epoch 19/20
+Train Loss: 1.0432 | Train AUC: 0.8702 | Train Sensitivity: 0.6046 | Train Specificity: 0.9134 | Train F1: 0.5709 | Train Balanced Accuracy: 0.6046
+Val Loss: 2.0217 | Val AUC: 0.7716 | Val Sensitivity: 0.3964 | Val Specificity: 0.8715 | Val F1: 0.3058 | Val Balanced Accuracy: 0.3964
+Epoch 20/20
+Train Loss: 1.0431 | Train AUC: 0.8705 | Train Sensitivity: 0.6056 | Train Specificity: 0.9136 | Train F1: 0.5719 | Train Balanced Accuracy: 0.6056
+Val Loss: 2.0099 | Val AUC: 0.7717 | Val Sensitivity: 0.3971 | Val Specificity: 0.8715 | Val F1: 0.3065 | Val Balanced Accuracy: 0.3971
+Testing completed and results saved.
+Test Loss: 1.5052 | Test AUC: 0.8295 | Test Sensitivity: 0.4273 | Test Specificity: 0.8885 | Test F1: 0.3897 | Test Balanced Accuracy: 0.4273

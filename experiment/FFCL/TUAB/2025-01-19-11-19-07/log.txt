@@ -1,0 +1,14 @@
+Model: FFCL
+Dataset: TUAB
+Time: 2025-01-19-11-19-07
+Sampling Rate: 200
+Sample Length: 10
+Batch Size: 512
+Number of Workers: 24
+Number of Classes: 2
+Number of Epochs: 20
+Learning Rate: 0.001
+Weight Decay: 1e-05
+Class Weight: None
+Before Training:
+Val Loss: 0.6913 | Val AUC: 0.5122 | Val Sensitivity: 0.5001 | Val Specificity: 0.5001 | Val F1: 0.3381 | Val Balanced Accuracy: 0.5001
