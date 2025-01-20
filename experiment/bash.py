@@ -20,10 +20,10 @@ python_path = sys.executable
 def main():
     # List your (model, dataset) combinations or however you want to structure the arguments
     combinations = [
-        (SPaRCNet, TUAB),
-        (CNNTransformer, TUAB),
-        (FFCL, TUAB),
-        (ContraWR, TUAB),
+        # (SPaRCNet, TUAB),
+        # (CNNTransformer, TUAB),
+        # (FFCL, TUAB),
+        # (ContraWR, TUAB),
         (STTransformer, TUAB),
         (BIOT, TUAB),
     ]

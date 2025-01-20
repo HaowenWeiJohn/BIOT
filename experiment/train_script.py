@@ -138,6 +138,49 @@ if __name__ == '__main__':
             hop_length=100
         )
 
+    elif model_name == "BIOT-pretrain-PREST":
+        print("BIOT-pretrain-PREST")
+        pretrained_model_path = "../pretrained-models/EEG-PREST-16-channels.ckpt"
+        model = BIOTClassifier(
+            emb_size=256,
+            heads=8,
+            depth=4,
+            n_classes=n_classes,
+            n_fft=200,
+            hop_length=100,
+            n_channels=16,  # here is 16
+        )
+        model.biot.load_state_dict(torch.load(pretrained_model_path))
+
+    elif model_name == "BIOT-pretrain-SHHS+PREST":
+        print("BIOT-pretrain-SHHS+PREST")
+        pretrained_model_path = "../pretrained-models/EEG-SHHS+PREST-18-channels.ckpt"
+        model = BIOTClassifier(
+            emb_size=256,
+            heads=8,
+            depth=4,
+            n_classes=n_classes,
+            n_fft=200,
+            hop_length=100,
+            n_channels=18,  # here is 18
+        )
+        model.biot.load_state_dict(torch.load(pretrained_model_path))
+
+
+    elif model_name == "BIOT-pretrain-six-datasets":
+        print("BIOT-pretrain-SHHS+PREST")
+        pretrained_model_path = "../pretrained-models/EEG-six-datasets-18-channels.ckpt"
+        model = BIOTClassifier(
+            emb_size=256,
+            heads=8,
+            depth=4,
+            n_classes=n_classes,
+            n_fft=200,
+            hop_length=100,
+            n_channels=18,  # here is 18
+        )
+        model.biot.load_state_dict(torch.load(pretrained_model_path))
+
     else:
         # stop the program
         exit()
