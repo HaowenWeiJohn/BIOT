@@ -13,7 +13,11 @@ if __name__ == '__main__':
     # model_name = "FFCL"
     # model_name = "ContraWR"
     # model_name = "STTransformer"
-    model_name = "BIOT"
+    # model_name = "BIOT"
+    # model_name = "BIOT-pretrain-PREST"
+    # model_name = "BIOT-pretrain-SHHS+PREST"
+    model_name = "BIOT-pretrain-six-datasets"
+
 
 
     dataset_name = "TUEV"
@@ -168,7 +172,7 @@ if __name__ == '__main__':
 
 
     elif model_name == "BIOT-pretrain-six-datasets":
-        print("BIOT-pretrain-SHHS+PREST")
+        print("BIOT-pretrain-six-datasets")
         pretrained_model_path = "../pretrained-models/EEG-six-datasets-18-channels.ckpt"
         model = BIOTClassifier(
             emb_size=256,

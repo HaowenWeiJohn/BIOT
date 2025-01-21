@@ -1,0 +1,18 @@
+Model: BIOT-pretrain-SHHS+PREST
+Dataset: TUAB
+Time: 2025-01-20-21-29-50
+Sampling Rate: 200
+Sample Length: 10
+Batch Size: 512
+Number of Workers: 16
+Number of Classes: 2
+Number of Epochs: 20
+Learning Rate: 0.001
+Weight Decay: 1e-05
+Class Weight: None
+Before Training:
+Val Loss: 0.7015 | Val AUC: 0.4348 | Val Sensitivity: 0.4590 | Val Specificity: 0.4590 | Val F1: 0.4325 | Val Balanced Accuracy: 0.4590
+Epoch 1/20
+Train Loss: 0.4592 | Train AUC: 0.8628 | Train Sensitivity: 0.7832 | Train Specificity: 0.7832 | Train F1: 0.7825 | Train Balanced Accuracy: 0.7832
+Val Loss: 0.4352 | Val AUC: 0.8755 | Val Sensitivity: 0.8006 | Val Specificity: 0.8006 | Val F1: 0.8007 | Val Balanced Accuracy: 0.8006
+Model saved!

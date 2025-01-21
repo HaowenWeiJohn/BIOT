@@ -13,6 +13,9 @@ FFCL = "FFCL"
 ContraWR = "ContraWR"
 STTransformer = "STTransformer"
 BIOT = "BIOT"
+BIOT_pretrain_PREST = "BIOT-pretrain-PREST"
+BIOT_pretrain_SHHS_PREST = "BIOT-pretrain-SHHS+PREST"
+BIOT_pretrain_six_datasets = "BIOT-pretrain-six-datasets"
 
 # Get the Python executable path of the current environment
 python_path = sys.executable
@@ -20,12 +23,20 @@ python_path = sys.executable
 def main():
     # List your (model, dataset) combinations or however you want to structure the arguments
     combinations = [
+        # (BIOT_pretrain_PREST, TUEV),
+        # (BIOT_pretrain_SHHS_PREST, TUEV),
+        # (BIOT_pretrain_six_datasets, TUEV),
+
         # (SPaRCNet, TUAB),
         # (CNNTransformer, TUAB),
         # (FFCL, TUAB),
         # (ContraWR, TUAB),
-        (STTransformer, TUAB),
-        (BIOT, TUAB),
+        # (STTransformer, TUAB),
+
+        # (BIOT, TUAB),
+        # (BIOT_pretrain_PREST, TUAB),
+        (BIOT_pretrain_SHHS_PREST, TUAB),
+        (BIOT_pretrain_six_datasets, TUAB),
     ]
 
     # The script you want to run sequentially
