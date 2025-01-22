@@ -1,3 +1,5 @@
+from collections import defaultdict
+
 from sklearn.metrics import (
     f1_score,
     recall_score,
@@ -41,6 +43,35 @@ class TUABLoader(torch.utils.data.Dataset):
         X = torch.FloatTensor(X)
         return X, Y
 
+    def select_samples(self, sample_per_class=10):
+        files = []
+        class_1_num = 0
+        class_2_num = 0
+
+        # shuffle the self.files
+        np.random.shuffle(self.files)
+
+        for i in range(len(self.files)):
+
+            sample = pickle.load(open(os.path.join(self.root, self.files[i]), "rb"))
+            label = sample["y"]
+
+            if label == 0 and class_1_num < sample_per_class:
+                class_1_num += 1
+                files.append(self.files[i])
+
+            elif label == 1 and class_2_num < sample_per_class:
+                class_2_num += 1
+                files.append(self.files[i])
+
+            # Stop if both classes have enough samples
+            if class_1_num >= sample_per_class and class_2_num >= sample_per_class:
+                break
+
+        self.files = files
+
+
+
 class TUEVLoader(torch.utils.data.Dataset):
     def __init__(self, x_path, y_path, sampling_rate=200):
         # x is numpy array of shape (n_samples, n_channels, n_timesteps)
@@ -56,6 +87,38 @@ class TUEVLoader(torch.utils.data.Dataset):
         x = torch.FloatTensor(self.x[index])
         y = self.y[index]
         return x, y
+
+    def select_samples(self, n):
+        """
+        Randomly select `n` samples from each class and update self.x and self.y.
+
+        Parameters:
+        - n: int, number of samples to select per class.
+
+        Updates:
+        - self.x: numpy array with the selected samples.
+        - self.y: numpy array with the corresponding labels.
+        """
+        # Create a dictionary to store indices for each class
+        class_indices = defaultdict(list)
+        for idx, label in enumerate(self.y):
+            class_indices[label].append(idx)
+
+        # Check that each class has enough samples
+        for label, indices in class_indices.items():
+            if len(indices) < n:
+                raise ValueError(f"Class {label} has less than {n} samples.")
+
+        # Randomly select `n` samples from each class
+        selected_indices = []
+        for label, indices in class_indices.items():
+            selected_indices.extend(np.random.choice(indices, n, replace=False))
+
+        # Gather the selected samples and labels
+        selected_indices = sorted(selected_indices)
+        self.x = self.x[selected_indices]
+        self.y = self.y[selected_indices]
+
 
 
 
