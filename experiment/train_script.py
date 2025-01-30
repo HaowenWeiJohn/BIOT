@@ -15,8 +15,10 @@ if __name__ == '__main__':
     # model_name = "STTransformer"
     # model_name = "BIOT"
     # model_name = "BIOT-pretrain-PREST"
-    # model_name = "BIOT-pretrain-SHHS+PREST"
-    model_name = "BIOT-pretrain-six-datasets"
+    model_name = "BIOT-pretrain-SHHS+PREST"
+    # model_name = "BIOT-pretrain-six-datasets"
+    # model_name = "BIOT-pretrain-IIIC+TUAB"
+
 
 
 
@@ -31,7 +33,7 @@ if __name__ == '__main__':
     in_channels = 16
     n_classes = 6
     num_epochs = 20
-    lr = 1e-3
+    lr = 1e-4
     weight_decay = 1e-5
     class_weight = None
     dataset_root = "C:/Dataset/raw/IIIC/processed/"
@@ -174,6 +176,20 @@ if __name__ == '__main__':
     elif model_name == "BIOT-pretrain-six-datasets":
         print("BIOT-pretrain-six-datasets")
         pretrained_model_path = "../pretrained-models/EEG-six-datasets-18-channels.ckpt"
+        model = BIOTClassifier(
+            emb_size=256,
+            heads=8,
+            depth=4,
+            n_classes=n_classes,
+            n_fft=200,
+            hop_length=100,
+            n_channels=18,  # here is 18
+        )
+        model.biot.load_state_dict(torch.load(pretrained_model_path))
+
+    elif model_name == "BIOT-pretrain-IIIC+TUAB":
+        print("BIOT-pretrain-IIIC+TUAB")
+        pretrained_model_path = "../pretrained-models/EEG-IIIC+TUAB-18-channels.ckpt"
         model = BIOTClassifier(
             emb_size=256,
             heads=8,

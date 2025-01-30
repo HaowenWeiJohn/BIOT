@@ -13,10 +13,12 @@ if __name__ == '__main__':
     # model_name = "FFCL"
     # model_name = "ContraWR"
     # model_name = "STTransformer"
-    model_name = "BIOT"
+    # model_name = "BIOT"
     # model_name = "BIOT-pretrain-PREST"
-    # model_name = "BIOT-pretrain-SHHS+PREST"
+    model_name = "BIOT-pretrain-SHHS+PREST"
     # model_name = "BIOT-pretrain-six-datasets"
+    # model_name = "BIOT-pretrain-IIIC+TUAB"
+
 
 
     dataset_name = "TUEV"
@@ -177,6 +179,20 @@ if __name__ == '__main__':
     elif model_name == "BIOT-pretrain-six-datasets":
         print("BIOT-pretrain-six-datasets")
         pretrained_model_path = "../pretrained-models/EEG-six-datasets-18-channels.ckpt"
+        model = BIOTClassifier(
+            emb_size=256,
+            heads=8,
+            depth=4,
+            n_classes=n_classes,
+            n_fft=200,
+            hop_length=100,
+            n_channels=18,  # here is 18
+        )
+        model.biot.load_state_dict(torch.load(pretrained_model_path))
+
+    elif model_name == "BIOT-pretrain-IIIC+TUAB":
+        print("BIOT-pretrain-IIIC+TUAB")
+        pretrained_model_path = "../pretrained-models/EEG-IIIC+TUAB-18-channels.ckpt"
         model = BIOTClassifier(
             emb_size=256,
             heads=8,
@@ -396,3 +412,6 @@ if __name__ == '__main__':
     log_file.flush()
 
     print("Testing completed and results saved.")
+
+    # close the file
+    log_file.close()

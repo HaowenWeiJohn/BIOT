@@ -112,7 +112,7 @@ class BIOTEncoder(nn.Module):
     def forward(self, x, n_channel_offset=0, perturb=False):
         """
         x: [batch_size, channel, ts]
-        output: [batch_size, emb_size]
+        output: [batch_size, emb_size]perturb
         """
         emb_seq = []
         for i in range(x.shape[1]):

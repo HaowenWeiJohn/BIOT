@@ -138,10 +138,6 @@ class IIICLoader(torch.utils.data.Dataset):
         y = self.y[index]
         return x, y
 
-
-
-
-
 def compute_metrics(targets, predictions, n_classes):
     targets = targets.cpu().numpy()
     predictions_prob = torch.softmax(predictions, dim=1).detach().cpu().numpy()
