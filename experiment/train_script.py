@@ -8,14 +8,14 @@ from model import SPaRCNet, CNNTransformer, FFCL, ContraWR, STTransformer, BIOTC
 
 if __name__ == '__main__':
 
-    # model_name = "SPaRCNet"
+    model_name = "SPaRCNet"
     # model_name = "CNNTransformer"
     # model_name = "FFCL"
     # model_name = "ContraWR"
     # model_name = "STTransformer"
     # model_name = "BIOT"
     # model_name = "BIOT-pretrain-PREST"
-    model_name = "BIOT-pretrain-SHHS+PREST"
+    # model_name = "BIOT-pretrain-SHHS+PREST"
     # model_name = "BIOT-pretrain-six-datasets"
     # model_name = "BIOT-pretrain-IIIC+TUAB"
 
