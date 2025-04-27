@@ -1,0 +1,225 @@
+Model: BIOT-supervised_multitask_TUAB_IIIC_TUEV
+Dataset: TUAB+IIIC+TUEV
+Time: 2025-03-31-04-14-34
+Sampling Rate: 200
+Batch Size: 512
+Number of Epochs: 30
+Learning Rate: 0.001
+Weight Decay: 1e-05
+Class Weight: None
+Epoch 1/30
+   [IIIC]   Train Loss: 1.4647 | AUC: 0.7642 | Sens: 0.3981 | Spec: 0.8797 | F1: 0.4013 | Bal Acc: 0.3981
+   [TUAB]   Train Loss: 0.5823 | AUC: 0.7991 | Sens: 0.7331 | Spec: 0.7331 | F1: 0.7328 | Bal Acc: 0.7331
+   [TUEV]   Train Loss: 0.5252 | AUC: 0.9029 | Sens: 0.4737 | Spec: 0.9438 | F1: 0.4945 | Bal Acc: 0.4737
+   [IIIC]   Val Loss: 1.3526 | AUC: 0.7948 | Sens: 0.4597 | Spec: 0.8914 | F1: 0.4308 | Bal Acc: 0.4597
+   [TUAB]   Val Loss: 0.4864 | AUC: 0.8541 | Sens: 0.7746 | Spec: 0.7746 | F1: 0.7741 | Bal Acc: 0.7746
+   [TUEV]   Val Loss: 0.5882 | AUC: 0.8613 | Sens: 0.4149 | Spec: 0.9356 | F1: 0.4228 | Bal Acc: 0.4149
+   [Info] New best model saved!
+Epoch 2/30
+   [IIIC]   Train Loss: 1.1319 | AUC: 0.8615 | Sens: 0.5554 | Spec: 0.9090 | F1: 0.5560 | Bal Acc: 0.5554
+   [TUAB]   Train Loss: 0.4618 | AUC: 0.8611 | Sens: 0.7822 | Spec: 0.7822 | F1: 0.7817 | Bal Acc: 0.7822
+   [TUEV]   Train Loss: 0.2024 | AUC: 0.9801 | Sens: 0.6864 | Spec: 0.9807 | F1: 0.7227 | Bal Acc: 0.6864
+   [IIIC]   Val Loss: 1.3604 | AUC: 0.7914 | Sens: 0.4600 | Spec: 0.8953 | F1: 0.4220 | Bal Acc: 0.4600
+   [TUAB]   Val Loss: 0.4572 | AUC: 0.8677 | Sens: 0.7927 | Spec: 0.7927 | F1: 0.7924 | Bal Acc: 0.7927
+   [TUEV]   Val Loss: 0.6189 | AUC: 0.8767 | Sens: 0.4561 | Spec: 0.9485 | F1: 0.4493 | Bal Acc: 0.4561
+Epoch 3/30
+   [IIIC]   Train Loss: 0.9908 | AUC: 0.8938 | Sens: 0.6241 | Spec: 0.9220 | F1: 0.6237 | Bal Acc: 0.6241
+   [TUAB]   Train Loss: 0.4311 | AUC: 0.8796 | Sens: 0.8001 | Spec: 0.8001 | F1: 0.7995 | Bal Acc: 0.8001
+   [TUEV]   Train Loss: 0.1204 | AUC: 0.9932 | Sens: 0.8101 | Spec: 0.9892 | F1: 0.8489 | Bal Acc: 0.8101
+   [IIIC]   Val Loss: 1.3956 | AUC: 0.8006 | Sens: 0.4391 | Spec: 0.8943 | F1: 0.4344 | Bal Acc: 0.4391
+   [TUAB]   Val Loss: 0.4556 | AUC: 0.8665 | Sens: 0.7941 | Spec: 0.7941 | F1: 0.7937 | Bal Acc: 0.7941
+   [TUEV]   Val Loss: 0.6063 | AUC: 0.8944 | Sens: 0.5008 | Spec: 0.9515 | F1: 0.4981 | Bal Acc: 0.5008
+Epoch 4/30
+   [IIIC]   Train Loss: 0.8914 | AUC: 0.9139 | Sens: 0.6700 | Spec: 0.9308 | F1: 0.6692 | Bal Acc: 0.6700
+   [TUAB]   Train Loss: 0.4102 | AUC: 0.8915 | Sens: 0.8141 | Spec: 0.8141 | F1: 0.8135 | Bal Acc: 0.8141
+   [TUEV]   Train Loss: 0.0875 | AUC: 0.9965 | Sens: 0.8912 | Spec: 0.9924 | F1: 0.9133 | Bal Acc: 0.8912
+   [IIIC]   Val Loss: 1.3973 | AUC: 0.8080 | Sens: 0.4319 | Spec: 0.8963 | F1: 0.4267 | Bal Acc: 0.4319
+   [TUAB]   Val Loss: 0.4692 | AUC: 0.8670 | Sens: 0.8002 | Spec: 0.8002 | F1: 0.7998 | Bal Acc: 0.8002
+   [TUEV]   Val Loss: 0.6205 | AUC: 0.9000 | Sens: 0.5108 | Spec: 0.9512 | F1: 0.5065 | Bal Acc: 0.5108
+Epoch 5/30
+   [IIIC]   Train Loss: 0.8096 | AUC: 0.9284 | Sens: 0.7010 | Spec: 0.9369 | F1: 0.7004 | Bal Acc: 0.7010
+   [TUAB]   Train Loss: 0.3912 | AUC: 0.9010 | Sens: 0.8226 | Spec: 0.8226 | F1: 0.8220 | Bal Acc: 0.8226
+   [TUEV]   Train Loss: 0.0683 | AUC: 0.9981 | Sens: 0.9243 | Spec: 0.9941 | F1: 0.9381 | Bal Acc: 0.9243
+   [IIIC]   Val Loss: 1.4376 | AUC: 0.8069 | Sens: 0.4411 | Spec: 0.8940 | F1: 0.4346 | Bal Acc: 0.4411
+   [TUAB]   Val Loss: 0.4581 | AUC: 0.8681 | Sens: 0.7995 | Spec: 0.7995 | F1: 0.7994 | Bal Acc: 0.7995
+   [TUEV]   Val Loss: 0.7240 | AUC: 0.8816 | Sens: 0.4808 | Spec: 0.9502 | F1: 0.4816 | Bal Acc: 0.4808
+Epoch 6/30
+   [IIIC]   Train Loss: 0.7329 | AUC: 0.9410 | Sens: 0.7336 | Spec: 0.9434 | F1: 0.7331 | Bal Acc: 0.7336
+   [TUAB]   Train Loss: 0.3790 | AUC: 0.9079 | Sens: 0.8302 | Spec: 0.8302 | F1: 0.8296 | Bal Acc: 0.8302
+   [TUEV]   Train Loss: 0.0596 | AUC: 0.9986 | Sens: 0.9393 | Spec: 0.9948 | F1: 0.9500 | Bal Acc: 0.9393
+   [IIIC]   Val Loss: 1.4722 | AUC: 0.8093 | Sens: 0.4394 | Spec: 0.8950 | F1: 0.4423 | Bal Acc: 0.4394
+   [TUAB]   Val Loss: 0.4468 | AUC: 0.8749 | Sens: 0.8030 | Spec: 0.8030 | F1: 0.8032 | Bal Acc: 0.8030
+   [TUEV]   Val Loss: 0.7786 | AUC: 0.8707 | Sens: 0.4913 | Spec: 0.9480 | F1: 0.4712 | Bal Acc: 0.4913
+Epoch 7/30
+   [IIIC]   Train Loss: 0.6718 | AUC: 0.9499 | Sens: 0.7578 | Spec: 0.9481 | F1: 0.7569 | Bal Acc: 0.7578
+   [TUAB]   Train Loss: 0.3650 | AUC: 0.9147 | Sens: 0.8371 | Spec: 0.8371 | F1: 0.8366 | Bal Acc: 0.8371
+   [TUEV]   Train Loss: 0.0551 | AUC: 0.9988 | Sens: 0.9487 | Spec: 0.9952 | F1: 0.9551 | Bal Acc: 0.9487
+   [IIIC]   Val Loss: 1.5208 | AUC: 0.8069 | Sens: 0.4566 | Spec: 0.8969 | F1: 0.4475 | Bal Acc: 0.4566
+   [TUAB]   Val Loss: 0.4502 | AUC: 0.8715 | Sens: 0.7995 | Spec: 0.7995 | F1: 0.7997 | Bal Acc: 0.7995
+   [TUEV]   Val Loss: 0.8468 | AUC: 0.8813 | Sens: 0.4912 | Spec: 0.9422 | F1: 0.4807 | Bal Acc: 0.4912
+Epoch 8/30
+   [IIIC]   Train Loss: 0.6081 | AUC: 0.9586 | Sens: 0.7807 | Spec: 0.9530 | F1: 0.7800 | Bal Acc: 0.7807
+   [TUAB]   Train Loss: 0.3553 | AUC: 0.9190 | Sens: 0.8413 | Spec: 0.8413 | F1: 0.8407 | Bal Acc: 0.8413
+   [TUEV]   Train Loss: 0.0509 | AUC: 0.9990 | Sens: 0.9532 | Spec: 0.9955 | F1: 0.9607 | Bal Acc: 0.9532
+   [IIIC]   Val Loss: 1.6104 | AUC: 0.7936 | Sens: 0.4270 | Spec: 0.8927 | F1: 0.4296 | Bal Acc: 0.4270
+   [TUAB]   Val Loss: 0.4855 | AUC: 0.8678 | Sens: 0.7891 | Spec: 0.7891 | F1: 0.7884 | Bal Acc: 0.7891
+   [TUEV]   Val Loss: 0.8163 | AUC: 0.8930 | Sens: 0.4884 | Spec: 0.9427 | F1: 0.4918 | Bal Acc: 0.4884
+Epoch 9/30
+   [IIIC]   Train Loss: 0.5485 | AUC: 0.9660 | Sens: 0.8051 | Spec: 0.9580 | F1: 0.8043 | Bal Acc: 0.8051
+   [TUAB]   Train Loss: 0.3448 | AUC: 0.9236 | Sens: 0.8485 | Spec: 0.8485 | F1: 0.8479 | Bal Acc: 0.8485
+   [TUEV]   Train Loss: 0.0460 | AUC: 0.9992 | Sens: 0.9618 | Spec: 0.9960 | F1: 0.9663 | Bal Acc: 0.9618
+   [IIIC]   Val Loss: 1.7736 | AUC: 0.7934 | Sens: 0.4217 | Spec: 0.8909 | F1: 0.4152 | Bal Acc: 0.4217
+   [TUAB]   Val Loss: 0.4721 | AUC: 0.8698 | Sens: 0.8001 | Spec: 0.8001 | F1: 0.8000 | Bal Acc: 0.8001
+   [TUEV]   Val Loss: 0.6985 | AUC: 0.8994 | Sens: 0.5185 | Spec: 0.9535 | F1: 0.5161 | Bal Acc: 0.5185
+Epoch 10/30
+   [IIIC]   Train Loss: 0.4919 | AUC: 0.9722 | Sens: 0.8242 | Spec: 0.9620 | F1: 0.8235 | Bal Acc: 0.8242
+   [TUAB]   Train Loss: 0.3348 | AUC: 0.9283 | Sens: 0.8518 | Spec: 0.8518 | F1: 0.8511 | Bal Acc: 0.8518
+   [TUEV]   Train Loss: 0.0453 | AUC: 0.9992 | Sens: 0.9622 | Spec: 0.9960 | F1: 0.9660 | Bal Acc: 0.9622
+   [IIIC]   Val Loss: 1.9467 | AUC: 0.7824 | Sens: 0.4173 | Spec: 0.8921 | F1: 0.4199 | Bal Acc: 0.4173
+   [TUAB]   Val Loss: 0.4878 | AUC: 0.8702 | Sens: 0.8034 | Spec: 0.8034 | F1: 0.8034 | Bal Acc: 0.8034
+   [TUEV]   Val Loss: 0.7807 | AUC: 0.8960 | Sens: 0.5240 | Spec: 0.9525 | F1: 0.5132 | Bal Acc: 0.5240
+Epoch 11/30
+   [IIIC]   Train Loss: 0.4403 | AUC: 0.9774 | Sens: 0.8454 | Spec: 0.9664 | F1: 0.8447 | Bal Acc: 0.8454
+   [TUAB]   Train Loss: 0.3220 | AUC: 0.9339 | Sens: 0.8593 | Spec: 0.8593 | F1: 0.8588 | Bal Acc: 0.8593
+   [TUEV]   Train Loss: 0.0433 | AUC: 0.9993 | Sens: 0.9619 | Spec: 0.9961 | F1: 0.9670 | Bal Acc: 0.9619
+   [IIIC]   Val Loss: 1.9885 | AUC: 0.7744 | Sens: 0.4074 | Spec: 0.8902 | F1: 0.4022 | Bal Acc: 0.4074
+   [TUAB]   Val Loss: 0.4715 | AUC: 0.8683 | Sens: 0.7982 | Spec: 0.7982 | F1: 0.7983 | Bal Acc: 0.7982
+   [TUEV]   Val Loss: 0.8256 | AUC: 0.8905 | Sens: 0.5162 | Spec: 0.9520 | F1: 0.5106 | Bal Acc: 0.5162
+Epoch 12/30
+   [IIIC]   Train Loss: 0.3836 | AUC: 0.9826 | Sens: 0.8648 | Spec: 0.9704 | F1: 0.8639 | Bal Acc: 0.8648
+   [TUAB]   Train Loss: 0.3105 | AUC: 0.9386 | Sens: 0.8644 | Spec: 0.8644 | F1: 0.8639 | Bal Acc: 0.8644
+   [TUEV]   Train Loss: 0.0411 | AUC: 0.9993 | Sens: 0.9687 | Spec: 0.9963 | F1: 0.9717 | Bal Acc: 0.9687
+   [IIIC]   Val Loss: 2.0750 | AUC: 0.7851 | Sens: 0.4044 | Spec: 0.8866 | F1: 0.4084 | Bal Acc: 0.4044
+   [TUAB]   Val Loss: 0.4786 | AUC: 0.8750 | Sens: 0.8064 | Spec: 0.8064 | F1: 0.8066 | Bal Acc: 0.8064
+   [TUEV]   Val Loss: 0.8170 | AUC: 0.8904 | Sens: 0.5368 | Spec: 0.9500 | F1: 0.5224 | Bal Acc: 0.5368
+Epoch 13/30
+   [IIIC]   Train Loss: 0.3402 | AUC: 0.9860 | Sens: 0.8811 | Spec: 0.9739 | F1: 0.8806 | Bal Acc: 0.8811
+   [TUAB]   Train Loss: 0.3024 | AUC: 0.9419 | Sens: 0.8682 | Spec: 0.8682 | F1: 0.8676 | Bal Acc: 0.8682
+   [TUEV]   Train Loss: 0.0405 | AUC: 0.9994 | Sens: 0.9695 | Spec: 0.9963 | F1: 0.9717 | Bal Acc: 0.9695
+   [IIIC]   Val Loss: 2.0274 | AUC: 0.7863 | Sens: 0.4260 | Spec: 0.8896 | F1: 0.4226 | Bal Acc: 0.4260
+   [TUAB]   Val Loss: 0.4836 | AUC: 0.8672 | Sens: 0.7972 | Spec: 0.7972 | F1: 0.7973 | Bal Acc: 0.7972
+   [TUEV]   Val Loss: 0.7245 | AUC: 0.8973 | Sens: 0.5218 | Spec: 0.9528 | F1: 0.5353 | Bal Acc: 0.5218
+Epoch 14/30
+   [IIIC]   Train Loss: 0.2956 | AUC: 0.9892 | Sens: 0.8979 | Spec: 0.9775 | F1: 0.8971 | Bal Acc: 0.8979
+   [TUAB]   Train Loss: 0.2903 | AUC: 0.9465 | Sens: 0.8740 | Spec: 0.8740 | F1: 0.8734 | Bal Acc: 0.8740
+   [TUEV]   Train Loss: 0.0387 | AUC: 0.9994 | Sens: 0.9680 | Spec: 0.9965 | F1: 0.9707 | Bal Acc: 0.9680
+   [IIIC]   Val Loss: 2.2519 | AUC: 0.7780 | Sens: 0.4192 | Spec: 0.8900 | F1: 0.4156 | Bal Acc: 0.4192
+   [TUAB]   Val Loss: 0.5029 | AUC: 0.8662 | Sens: 0.7927 | Spec: 0.7927 | F1: 0.7928 | Bal Acc: 0.7927
+   [TUEV]   Val Loss: 0.7697 | AUC: 0.8838 | Sens: 0.5037 | Spec: 0.9512 | F1: 0.5036 | Bal Acc: 0.5037
+Epoch 15/30
+   [IIIC]   Train Loss: 0.2643 | AUC: 0.9914 | Sens: 0.9077 | Spec: 0.9797 | F1: 0.9075 | Bal Acc: 0.9077
+   [TUAB]   Train Loss: 0.2816 | AUC: 0.9498 | Sens: 0.8782 | Spec: 0.8782 | F1: 0.8777 | Bal Acc: 0.8782
+   [TUEV]   Train Loss: 0.0376 | AUC: 0.9995 | Sens: 0.9694 | Spec: 0.9965 | F1: 0.9723 | Bal Acc: 0.9694
+   [IIIC]   Val Loss: 2.4191 | AUC: 0.7769 | Sens: 0.4035 | Spec: 0.8895 | F1: 0.4099 | Bal Acc: 0.4035
+   [TUAB]   Val Loss: 0.5314 | AUC: 0.8651 | Sens: 0.7978 | Spec: 0.7978 | F1: 0.7976 | Bal Acc: 0.7978
+   [TUEV]   Val Loss: 0.8304 | AUC: 0.8674 | Sens: 0.5097 | Spec: 0.9506 | F1: 0.4912 | Bal Acc: 0.5097
+Epoch 16/30
+   [IIIC]   Train Loss: 0.2279 | AUC: 0.9934 | Sens: 0.9212 | Spec: 0.9826 | F1: 0.9210 | Bal Acc: 0.9212
+   [TUAB]   Train Loss: 0.2698 | AUC: 0.9542 | Sens: 0.8834 | Spec: 0.8834 | F1: 0.8829 | Bal Acc: 0.8834
+   [TUEV]   Train Loss: 0.0360 | AUC: 0.9995 | Sens: 0.9721 | Spec: 0.9966 | F1: 0.9737 | Bal Acc: 0.9721
+   [IIIC]   Val Loss: 2.5692 | AUC: 0.7757 | Sens: 0.4213 | Spec: 0.8923 | F1: 0.4180 | Bal Acc: 0.4213
+   [TUAB]   Val Loss: 0.5134 | AUC: 0.8735 | Sens: 0.8030 | Spec: 0.8030 | F1: 0.8032 | Bal Acc: 0.8030
+   [TUEV]   Val Loss: 0.7906 | AUC: 0.8874 | Sens: 0.5251 | Spec: 0.9539 | F1: 0.5290 | Bal Acc: 0.5251
+Epoch 17/30
+   [IIIC]   Train Loss: 0.2026 | AUC: 0.9948 | Sens: 0.9306 | Spec: 0.9846 | F1: 0.9306 | Bal Acc: 0.9306
+   [TUAB]   Train Loss: 0.2586 | AUC: 0.9579 | Sens: 0.8902 | Spec: 0.8902 | F1: 0.8898 | Bal Acc: 0.8902
+   [TUEV]   Train Loss: 0.0349 | AUC: 0.9995 | Sens: 0.9741 | Spec: 0.9968 | F1: 0.9764 | Bal Acc: 0.9741
+   [IIIC]   Val Loss: 2.5206 | AUC: 0.7805 | Sens: 0.4174 | Spec: 0.8904 | F1: 0.4202 | Bal Acc: 0.4174
+   [TUAB]   Val Loss: 0.5342 | AUC: 0.8581 | Sens: 0.7858 | Spec: 0.7858 | F1: 0.7860 | Bal Acc: 0.7858
+   [TUEV]   Val Loss: 0.8311 | AUC: 0.8712 | Sens: 0.5099 | Spec: 0.9525 | F1: 0.4991 | Bal Acc: 0.5099
+Epoch 18/30
+   [IIIC]   Train Loss: 0.1758 | AUC: 0.9960 | Sens: 0.9400 | Spec: 0.9867 | F1: 0.9397 | Bal Acc: 0.9400
+   [TUAB]   Train Loss: 0.2481 | AUC: 0.9613 | Sens: 0.8955 | Spec: 0.8955 | F1: 0.8952 | Bal Acc: 0.8955
+   [TUEV]   Train Loss: 0.0349 | AUC: 0.9995 | Sens: 0.9736 | Spec: 0.9968 | F1: 0.9753 | Bal Acc: 0.9736
+   [IIIC]   Val Loss: 2.6660 | AUC: 0.7847 | Sens: 0.4163 | Spec: 0.8913 | F1: 0.4272 | Bal Acc: 0.4163
+   [TUAB]   Val Loss: 0.5420 | AUC: 0.8673 | Sens: 0.7910 | Spec: 0.7910 | F1: 0.7908 | Bal Acc: 0.7910
+   [TUEV]   Val Loss: 0.8343 | AUC: 0.8839 | Sens: 0.5222 | Spec: 0.9511 | F1: 0.5117 | Bal Acc: 0.5222
+Epoch 19/30
+   [IIIC]   Train Loss: 0.1592 | AUC: 0.9967 | Sens: 0.9459 | Spec: 0.9880 | F1: 0.9456 | Bal Acc: 0.9459
+   [TUAB]   Train Loss: 0.2410 | AUC: 0.9635 | Sens: 0.8975 | Spec: 0.8975 | F1: 0.8972 | Bal Acc: 0.8975
+   [TUEV]   Train Loss: 0.0341 | AUC: 0.9996 | Sens: 0.9745 | Spec: 0.9968 | F1: 0.9762 | Bal Acc: 0.9745
+   [IIIC]   Val Loss: 2.7997 | AUC: 0.7819 | Sens: 0.4231 | Spec: 0.8899 | F1: 0.4218 | Bal Acc: 0.4231
+   [TUAB]   Val Loss: 0.5822 | AUC: 0.8464 | Sens: 0.7687 | Spec: 0.7687 | F1: 0.7685 | Bal Acc: 0.7687
+   [TUEV]   Val Loss: 0.8047 | AUC: 0.8859 | Sens: 0.5195 | Spec: 0.9525 | F1: 0.5090 | Bal Acc: 0.5195
+Epoch 20/30
+   [IIIC]   Train Loss: 0.1391 | AUC: 0.9975 | Sens: 0.9531 | Spec: 0.9895 | F1: 0.9528 | Bal Acc: 0.9531
+   [TUAB]   Train Loss: 0.2345 | AUC: 0.9657 | Sens: 0.9011 | Spec: 0.9011 | F1: 0.9008 | Bal Acc: 0.9011
+   [TUEV]   Train Loss: 0.0337 | AUC: 0.9996 | Sens: 0.9736 | Spec: 0.9969 | F1: 0.9759 | Bal Acc: 0.9736
+   [IIIC]   Val Loss: 2.9533 | AUC: 0.7742 | Sens: 0.3991 | Spec: 0.8858 | F1: 0.4041 | Bal Acc: 0.3991
+   [TUAB]   Val Loss: 0.5803 | AUC: 0.8537 | Sens: 0.7788 | Spec: 0.7788 | F1: 0.7788 | Bal Acc: 0.7788
+   [TUEV]   Val Loss: 0.8549 | AUC: 0.8624 | Sens: 0.5134 | Spec: 0.9516 | F1: 0.5080 | Bal Acc: 0.5134
+Epoch 21/30
+   [IIIC]   Train Loss: 0.1267 | AUC: 0.9979 | Sens: 0.9568 | Spec: 0.9903 | F1: 0.9567 | Bal Acc: 0.9568
+   [TUAB]   Train Loss: 0.2290 | AUC: 0.9672 | Sens: 0.9032 | Spec: 0.9032 | F1: 0.9028 | Bal Acc: 0.9032
+   [TUEV]   Train Loss: 0.0318 | AUC: 0.9996 | Sens: 0.9766 | Spec: 0.9970 | F1: 0.9780 | Bal Acc: 0.9766
+   [IIIC]   Val Loss: 2.9480 | AUC: 0.7752 | Sens: 0.4083 | Spec: 0.8892 | F1: 0.4121 | Bal Acc: 0.4083
+   [TUAB]   Val Loss: 0.5719 | AUC: 0.8492 | Sens: 0.7738 | Spec: 0.7738 | F1: 0.7739 | Bal Acc: 0.7738
+   [TUEV]   Val Loss: 0.8562 | AUC: 0.8635 | Sens: 0.5001 | Spec: 0.9532 | F1: 0.5053 | Bal Acc: 0.5001
+Epoch 22/30
+   [IIIC]   Train Loss: 0.1121 | AUC: 0.9984 | Sens: 0.9617 | Spec: 0.9914 | F1: 0.9618 | Bal Acc: 0.9617
+   [TUAB]   Train Loss: 0.2175 | AUC: 0.9705 | Sens: 0.9078 | Spec: 0.9078 | F1: 0.9074 | Bal Acc: 0.9078
+   [TUEV]   Train Loss: 0.0320 | AUC: 0.9996 | Sens: 0.9736 | Spec: 0.9969 | F1: 0.9764 | Bal Acc: 0.9736
+   [IIIC]   Val Loss: 3.2713 | AUC: 0.7651 | Sens: 0.3873 | Spec: 0.8862 | F1: 0.3915 | Bal Acc: 0.3873
+   [TUAB]   Val Loss: 0.5968 | AUC: 0.8617 | Sens: 0.7851 | Spec: 0.7851 | F1: 0.7850 | Bal Acc: 0.7851
+   [TUEV]   Val Loss: 0.8808 | AUC: 0.8535 | Sens: 0.5235 | Spec: 0.9519 | F1: 0.5121 | Bal Acc: 0.5235
+Epoch 23/30
+   [IIIC]   Train Loss: 0.1032 | AUC: 0.9986 | Sens: 0.9645 | Spec: 0.9920 | F1: 0.9645 | Bal Acc: 0.9645
+   [TUAB]   Train Loss: 0.2084 | AUC: 0.9731 | Sens: 0.9136 | Spec: 0.9136 | F1: 0.9132 | Bal Acc: 0.9136
+   [TUEV]   Train Loss: 0.0321 | AUC: 0.9996 | Sens: 0.9745 | Spec: 0.9969 | F1: 0.9762 | Bal Acc: 0.9745
+   [IIIC]   Val Loss: 3.2738 | AUC: 0.7757 | Sens: 0.3930 | Spec: 0.8861 | F1: 0.4001 | Bal Acc: 0.3930
+   [TUAB]   Val Loss: 0.5907 | AUC: 0.8650 | Sens: 0.7962 | Spec: 0.7962 | F1: 0.7961 | Bal Acc: 0.7962
+   [TUEV]   Val Loss: 0.9221 | AUC: 0.8588 | Sens: 0.4970 | Spec: 0.9479 | F1: 0.4890 | Bal Acc: 0.4970
+Epoch 24/30
+   [IIIC]   Train Loss: 0.0884 | AUC: 0.9990 | Sens: 0.9698 | Spec: 0.9931 | F1: 0.9698 | Bal Acc: 0.9698
+   [TUAB]   Train Loss: 0.2001 | AUC: 0.9750 | Sens: 0.9162 | Spec: 0.9162 | F1: 0.9159 | Bal Acc: 0.9162
+   [TUEV]   Train Loss: 0.0311 | AUC: 0.9996 | Sens: 0.9759 | Spec: 0.9970 | F1: 0.9783 | Bal Acc: 0.9759
+   [IIIC]   Val Loss: 3.2647 | AUC: 0.7842 | Sens: 0.4240 | Spec: 0.8908 | F1: 0.4227 | Bal Acc: 0.4240
+   [TUAB]   Val Loss: 0.6113 | AUC: 0.8624 | Sens: 0.7913 | Spec: 0.7913 | F1: 0.7911 | Bal Acc: 0.7913
+   [TUEV]   Val Loss: 0.8822 | AUC: 0.8583 | Sens: 0.5002 | Spec: 0.9500 | F1: 0.4901 | Bal Acc: 0.5002
+Epoch 25/30
+   [IIIC]   Train Loss: 0.0836 | AUC: 0.9991 | Sens: 0.9717 | Spec: 0.9936 | F1: 0.9716 | Bal Acc: 0.9717
+   [TUAB]   Train Loss: 0.1902 | AUC: 0.9776 | Sens: 0.9210 | Spec: 0.9210 | F1: 0.9207 | Bal Acc: 0.9210
+   [TUEV]   Train Loss: 0.0302 | AUC: 0.9997 | Sens: 0.9774 | Spec: 0.9971 | F1: 0.9789 | Bal Acc: 0.9774
+   [IIIC]   Val Loss: 3.2810 | AUC: 0.7817 | Sens: 0.4099 | Spec: 0.8899 | F1: 0.4191 | Bal Acc: 0.4099
+   [TUAB]   Val Loss: 0.6135 | AUC: 0.8532 | Sens: 0.7811 | Spec: 0.7811 | F1: 0.7813 | Bal Acc: 0.7811
+   [TUEV]   Val Loss: 0.8654 | AUC: 0.8578 | Sens: 0.5013 | Spec: 0.9532 | F1: 0.4966 | Bal Acc: 0.5013
+Epoch 26/30
+   [IIIC]   Train Loss: 0.0747 | AUC: 0.9993 | Sens: 0.9741 | Spec: 0.9941 | F1: 0.9742 | Bal Acc: 0.9741
+   [TUAB]   Train Loss: 0.1829 | AUC: 0.9794 | Sens: 0.9246 | Spec: 0.9246 | F1: 0.9243 | Bal Acc: 0.9246
+   [TUEV]   Train Loss: 0.0307 | AUC: 0.9997 | Sens: 0.9776 | Spec: 0.9971 | F1: 0.9793 | Bal Acc: 0.9776
+   [IIIC]   Val Loss: 3.4408 | AUC: 0.7707 | Sens: 0.4074 | Spec: 0.8888 | F1: 0.4112 | Bal Acc: 0.4074
+   [TUAB]   Val Loss: 0.6248 | AUC: 0.8561 | Sens: 0.7820 | Spec: 0.7820 | F1: 0.7822 | Bal Acc: 0.7820
+   [TUEV]   Val Loss: 0.8741 | AUC: 0.8521 | Sens: 0.5059 | Spec: 0.9488 | F1: 0.4980 | Bal Acc: 0.5059
+Epoch 27/30
+   [IIIC]   Train Loss: 0.0706 | AUC: 0.9993 | Sens: 0.9762 | Spec: 0.9945 | F1: 0.9761 | Bal Acc: 0.9762
+   [TUAB]   Train Loss: 0.1765 | AUC: 0.9807 | Sens: 0.9285 | Spec: 0.9285 | F1: 0.9283 | Bal Acc: 0.9285
+   [TUEV]   Train Loss: 0.0302 | AUC: 0.9997 | Sens: 0.9761 | Spec: 0.9971 | F1: 0.9775 | Bal Acc: 0.9761
+   [IIIC]   Val Loss: 3.5421 | AUC: 0.7789 | Sens: 0.4132 | Spec: 0.8886 | F1: 0.4231 | Bal Acc: 0.4132
+   [TUAB]   Val Loss: 0.6299 | AUC: 0.8472 | Sens: 0.7716 | Spec: 0.7716 | F1: 0.7717 | Bal Acc: 0.7716
+   [TUEV]   Val Loss: 0.8748 | AUC: 0.8414 | Sens: 0.5264 | Spec: 0.9520 | F1: 0.5146 | Bal Acc: 0.5264
+Epoch 28/30
+   [IIIC]   Train Loss: 0.0647 | AUC: 0.9994 | Sens: 0.9782 | Spec: 0.9949 | F1: 0.9781 | Bal Acc: 0.9782
+   [TUAB]   Train Loss: 0.1698 | AUC: 0.9821 | Sens: 0.9304 | Spec: 0.9304 | F1: 0.9301 | Bal Acc: 0.9304
+   [TUEV]   Train Loss: 0.0302 | AUC: 0.9997 | Sens: 0.9760 | Spec: 0.9970 | F1: 0.9776 | Bal Acc: 0.9760
+   [IIIC]   Val Loss: 3.5209 | AUC: 0.7819 | Sens: 0.4234 | Spec: 0.8906 | F1: 0.4312 | Bal Acc: 0.4234
+   [TUAB]   Val Loss: 0.6362 | AUC: 0.8555 | Sens: 0.7828 | Spec: 0.7828 | F1: 0.7828 | Bal Acc: 0.7828
+   [TUEV]   Val Loss: 0.9427 | AUC: 0.8444 | Sens: 0.5027 | Spec: 0.9490 | F1: 0.5064 | Bal Acc: 0.5027
+Epoch 29/30
+   [IIIC]   Train Loss: 0.0574 | AUC: 0.9996 | Sens: 0.9806 | Spec: 0.9955 | F1: 0.9807 | Bal Acc: 0.9806
+   [TUAB]   Train Loss: 0.1627 | AUC: 0.9836 | Sens: 0.9340 | Spec: 0.9340 | F1: 0.9338 | Bal Acc: 0.9340
+   [TUEV]   Train Loss: 0.0298 | AUC: 0.9997 | Sens: 0.9761 | Spec: 0.9971 | F1: 0.9784 | Bal Acc: 0.9761
+   [IIIC]   Val Loss: 3.7677 | AUC: 0.7770 | Sens: 0.4101 | Spec: 0.8901 | F1: 0.4193 | Bal Acc: 0.4101
+   [TUAB]   Val Loss: 0.6642 | AUC: 0.8529 | Sens: 0.7792 | Spec: 0.7792 | F1: 0.7794 | Bal Acc: 0.7792
+   [TUEV]   Val Loss: 0.8980 | AUC: 0.8472 | Sens: 0.5091 | Spec: 0.9525 | F1: 0.5085 | Bal Acc: 0.5091
+Epoch 30/30
+   [IIIC]   Train Loss: 0.0542 | AUC: 0.9996 | Sens: 0.9815 | Spec: 0.9957 | F1: 0.9814 | Bal Acc: 0.9815
+   [TUAB]   Train Loss: 0.1577 | AUC: 0.9846 | Sens: 0.9357 | Spec: 0.9357 | F1: 0.9355 | Bal Acc: 0.9357
+   [TUEV]   Train Loss: 0.0291 | AUC: 0.9997 | Sens: 0.9771 | Spec: 0.9971 | F1: 0.9794 | Bal Acc: 0.9771
+   [IIIC]   Val Loss: 3.9451 | AUC: 0.7638 | Sens: 0.4079 | Spec: 0.8885 | F1: 0.4024 | Bal Acc: 0.4079
+   [TUAB]   Val Loss: 0.6635 | AUC: 0.8617 | Sens: 0.7878 | Spec: 0.7878 | F1: 0.7878 | Bal Acc: 0.7878
+   [TUEV]   Val Loss: 0.9169 | AUC: 0.8526 | Sens: 0.5047 | Spec: 0.9507 | F1: 0.5025 | Bal Acc: 0.5047
+
+** FINAL TEST RESULTS **
+[IIIC ] Loss=1.2154, AUC=0.8478, Sens=0.4836, Spec=0.9010, F1=0.4747, BAcc=0.4836
+[TUAB ] Loss=0.5000, AUC=0.8441, Sens=0.7635, Spec=0.7635, F1=0.7614, BAcc=0.7635
+[TUEV ] Loss=0.6519, AUC=0.9033, Sens=0.3856, Spec=0.9323, F1=0.3868, BAcc=0.3856

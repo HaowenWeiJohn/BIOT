@@ -1,0 +1,58 @@
+Model: BIOT-pretrain-IIIC+TUAB
+Dataset: TUEV
+Time: 2025-01-24-13-57-35
+Sampling Rate: 200
+Sample Length: 5
+Batch Size: 48
+Number of Workers: 0
+Number of Classes: 6
+Number of Epochs: 20
+Learning Rate: 0.001
+Weight Decay: 1e-05
+Class Weight: None
+Before Training:
+Val Loss: 1.8435 | Val AUC: 0.4966 | Val Sensitivity: 0.1458 | Val Specificity: 0.8240 | Val F1: 0.0832 | Val Balanced Accuracy: 0.1458
+Epoch 1/20
+Train Loss: 1.6627 | Train AUC: 0.6899 | Train Sensitivity: 0.3333 | Train Specificity: 0.8667 | Train F1: 0.3263 | Train Balanced Accuracy: 0.3333
+Val Loss: 1.3861 | Val AUC: 0.7748 | Val Sensitivity: 0.3788 | Val Specificity: 0.8913 | Val F1: 0.2916 | Val Balanced Accuracy: 0.3788
+Model saved!
+Epoch 2/20
+Train Loss: 1.1061 | Train AUC: 0.8979 | Train Sensitivity: 0.6146 | Train Specificity: 0.9229 | Train F1: 0.6125 | Train Balanced Accuracy: 0.6146
+Val Loss: 1.3386 | Val AUC: 0.7709 | Val Sensitivity: 0.3949 | Val Specificity: 0.8944 | Val F1: 0.3120 | Val Balanced Accuracy: 0.3949
+Model saved!
+Epoch 3/20
+Train Loss: 0.9875 | Train AUC: 0.9173 | Train Sensitivity: 0.6875 | Train Specificity: 0.9375 | Train F1: 0.6830 | Train Balanced Accuracy: 0.6875
+Val Loss: 1.3377 | Val AUC: 0.7718 | Val Sensitivity: 0.3994 | Val Specificity: 0.8944 | Val F1: 0.3138 | Val Balanced Accuracy: 0.3994
+Model saved!
+Epoch 4/20
+Train Loss: 0.9784 | Train AUC: 0.9189 | Train Sensitivity: 0.6823 | Train Specificity: 0.9365 | Train F1: 0.6788 | Train Balanced Accuracy: 0.6823
+Val Loss: 1.3373 | Val AUC: 0.7720 | Val Sensitivity: 0.4003 | Val Specificity: 0.8953 | Val F1: 0.3153 | Val Balanced Accuracy: 0.4003
+Model saved!
+Epoch 5/20
+Train Loss: 0.9772 | Train AUC: 0.9195 | Train Sensitivity: 0.6875 | Train Specificity: 0.9375 | Train F1: 0.6836 | Train Balanced Accuracy: 0.6875
+Val Loss: 1.3372 | Val AUC: 0.7720 | Val Sensitivity: 0.4003 | Val Specificity: 0.8953 | Val F1: 0.3153 | Val Balanced Accuracy: 0.4003
+Model saved!
+Epoch 6/20
+Train Loss: 0.9757 | Train AUC: 0.9195 | Train Sensitivity: 0.6771 | Train Specificity: 0.9354 | Train F1: 0.6734 | Train Balanced Accuracy: 0.6771
+Val Loss: 1.3372 | Val AUC: 0.7720 | Val Sensitivity: 0.4003 | Val Specificity: 0.8953 | Val F1: 0.3153 | Val Balanced Accuracy: 0.4003
+Model saved!
+Epoch 7/20
+Train Loss: 0.9768 | Train AUC: 0.9193 | Train Sensitivity: 0.6719 | Train Specificity: 0.9344 | Train F1: 0.6682 | Train Balanced Accuracy: 0.6719
+Val Loss: 1.3372 | Val AUC: 0.7720 | Val Sensitivity: 0.4003 | Val Specificity: 0.8953 | Val F1: 0.3153 | Val Balanced Accuracy: 0.4003
+Model saved!
+Epoch 8/20
+Train Loss: 0.9792 | Train AUC: 0.9185 | Train Sensitivity: 0.6823 | Train Specificity: 0.9365 | Train F1: 0.6786 | Train Balanced Accuracy: 0.6823
+Val Loss: 1.3372 | Val AUC: 0.7720 | Val Sensitivity: 0.4003 | Val Specificity: 0.8953 | Val F1: 0.3153 | Val Balanced Accuracy: 0.4003
+Model saved!
+Epoch 9/20
+Train Loss: 0.9770 | Train AUC: 0.9195 | Train Sensitivity: 0.6823 | Train Specificity: 0.9365 | Train F1: 0.6788 | Train Balanced Accuracy: 0.6823
+Val Loss: 1.3372 | Val AUC: 0.7720 | Val Sensitivity: 0.4003 | Val Specificity: 0.8953 | Val F1: 0.3153 | Val Balanced Accuracy: 0.4003
+Epoch 10/20
+Train Loss: 0.9781 | Train AUC: 0.9197 | Train Sensitivity: 0.6823 | Train Specificity: 0.9365 | Train F1: 0.6784 | Train Balanced Accuracy: 0.6823
+Val Loss: 1.3372 | Val AUC: 0.7720 | Val Sensitivity: 0.4003 | Val Specificity: 0.8953 | Val F1: 0.3153 | Val Balanced Accuracy: 0.4003
+Epoch 11/20
+Train Loss: 0.9788 | Train AUC: 0.9187 | Train Sensitivity: 0.6875 | Train Specificity: 0.9375 | Train F1: 0.6840 | Train Balanced Accuracy: 0.6875
+Val Loss: 1.3372 | Val AUC: 0.7720 | Val Sensitivity: 0.4003 | Val Specificity: 0.8953 | Val F1: 0.3153 | Val Balanced Accuracy: 0.4003
+Epoch 12/20
+Train Loss: 0.9742 | Train AUC: 0.9200 | Train Sensitivity: 0.6719 | Train Specificity: 0.9344 | Train F1: 0.6687 | Train Balanced Accuracy: 0.6719
+Val Loss: 1.3372 | Val AUC: 0.7720 | Val Sensitivity: 0.4003 | Val Specificity: 0.8953 | Val F1: 0.3153 | Val Balanced Accuracy: 0.4003

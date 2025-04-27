@@ -1,0 +1,14 @@
+Model: BIOT-pretrain-SHHS+PREST
+Dataset: TUEV
+Time: 2025-01-25-20-28-33
+Sampling Rate: 200
+Sample Length: 5
+Batch Size: 48
+Number of Workers: 0
+Number of Classes: 6
+Number of Epochs: 20
+Learning Rate: 0.001
+Weight Decay: 1e-05
+Class Weight: None
+Before Training:
+Val Loss: 1.7911 | Val AUC: 0.4106 | Val Sensitivity: 0.1115 | Val Specificity: 0.8272 | Val F1: 0.0842 | Val Balanced Accuracy: 0.1115
